@@ -35,11 +35,14 @@ body {
 legend {
   font-size: 1.5rem;
   font-weight: bolder;
+  padding-left: 56px;
+  padding-right: 56px;
 }
 
 #form {
   background-color: white;
   flex: auto;
+  padding: 24px;
 }
 
 fieldset {
@@ -58,15 +61,40 @@ li {
   margin-bottom: 24px;
 }
 
-input {
-  height: 1.5rem;
+label {
+  font-family: "Roboto", sans-serif;
+  color: rgb(83, 83, 83);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding-bottom: 3px;
+  letter-spacing:0.11rem;
+}
+
+#form input {
+  height: 1.7rem;
   width: 300px;
   border-radius: 6px;
-  border-color: #E5E7EB;
+  border-width: 1px;
+  border-color: #e5e7eb;
   font-size: 1rem;
 }
 
+#bottom {
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+
 #bottom a {
-  color: green;
+  color: #596d48;
   text-decoration: none;
+}
+#button input {
+  height: 56px;
+  width: 250px;
+  background-color: #596d48;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-style: none;
 }

@@ -7,7 +7,7 @@ body {
 }
 
 #left {
-  width: 35%;
+  width: 45%;
   border-right: 1px white solid;
 }
 
@@ -27,11 +27,12 @@ body {
 #top {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   padding: 2rem;
 }
 
-#top p, legend {
+#top p,
+legend {
   font-size: 1.5rem;
   font-weight: bolder;
 }
@@ -41,14 +42,31 @@ body {
   flex: auto;
 }
 
-fieldset{
-    display: flex;
-    
+fieldset {
+  display: flex;
+  border-width: 0;
 }
 
-ul{
-    list-style: none;
-    margin-right: 48px;
+ul {
+  list-style: none;
+  margin-right: 48px;
 }
 
-li{margin-bottom: 24px;}
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+input {
+  height: 1.5rem;
+  width: 300px;
+  border-radius: 6px;
+  border-color: #E5E7EB;
+  font-size: 1rem;
+}
+
+#bottom a {
+  color: green;
+  text-decoration: none;
+}

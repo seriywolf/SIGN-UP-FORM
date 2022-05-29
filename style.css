@@ -1,0 +1,34 @@
+body{
+    background: url("background.jpg");
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+}
+
+#left{
+    width: 35%;
+    border-right: 1px white solid;
+}
+
+#right{
+    flex: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+#top, #bottom{
+    background-color: aliceblue;
+}
+
+#top p{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#form{
+    background-color: white;
+}

@@ -1,34 +1,40 @@
-body{
-    background: url("background.jpg");
-    display: flex;
-    min-height: 100vh;
-    display: flex;
-    margin: 0;
+body {
+  background: url("background.jpg");
+  display: flex;
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
 }
 
-#left{
-    width: 35%;
-    border-right: 1px white solid;
+#left {
+  width: 35%;
+  border-right: 1px white solid;
 }
 
-#right{
-    flex: auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    
+#right {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#top, #bottom{
-    background-color: aliceblue;
+#top,
+#bottom {
+  background-color: rgba(194, 194, 194, 0.87);
 }
 
-#top p{
-    font-size: larger;
-    font-weight: bolder;
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
 }
 
-#form{
-    background-color: white;
+#top p, legend {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#form {
+  background-color: white;
 }

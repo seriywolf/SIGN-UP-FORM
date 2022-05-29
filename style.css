@@ -4,6 +4,8 @@ body {
   min-height: 100vh;
   display: flex;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #left {
@@ -21,7 +23,7 @@ body {
 #top,
 #bottom {
   background-color: rgba(228, 228, 228, 0.87);
-  height: 35%;
+  height: 39%;
 }
 
 #top {
@@ -35,19 +37,21 @@ body {
 legend {
   font-size: 1.5rem;
   font-weight: bolder;
-  padding-left: 56px;
-  padding-right: 56px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 #form {
   background-color: white;
   flex: auto;
-  padding: 24px;
+  padding: 24px 24px 0 24px;
 }
 
 fieldset {
   display: flex;
   border-width: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -65,18 +69,26 @@ label {
   font-family: "Roboto", sans-serif;
   color: rgb(83, 83, 83);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-bottom: 3px;
-  letter-spacing:0.11rem;
+  letter-spacing: 0.11rem;
 }
 
 #form input {
-  height: 1.7rem;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 1.8rem;
   width: 300px;
   border-radius: 6px;
   border-width: 1px;
   border-color: #e5e7eb;
   font-size: 1rem;
+}
+
+#form input:focus {
+  outline: none;
+  border: rgb(115, 196, 243) solid 1px;
+  box-shadow: 2px 2px 3px 0px #000000;
 }
 
 #bottom {
@@ -94,12 +106,13 @@ label {
   background-color: #596d48;
   border-radius: 6px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 500;
   border-style: none;
 }
 
-#button input:focus, #button input:hover {
+#button input:focus,
+#button input:hover {
   background-color: #455338;
 }
 

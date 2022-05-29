@@ -20,7 +20,8 @@ body {
 
 #top,
 #bottom {
-  background-color: rgba(194, 194, 194, 0.87);
+  background-color: rgba(228, 228, 228, 0.87);
+  height: 35%;
 }
 
 #top {
@@ -37,4 +38,17 @@ body {
 
 #form {
   background-color: white;
+  flex: auto;
 }
+
+fieldset{
+    display: flex;
+    
+}
+
+ul{
+    list-style: none;
+    margin-right: 48px;
+}
+
+li{margin-bottom: 24px;}

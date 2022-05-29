@@ -83,6 +83,7 @@ label {
   border-width: 1px;
   border-color: #e5e7eb;
   font-size: 1rem;
+  padding-left: 1rem;
 }
 
 #form input:focus {
@@ -119,3 +120,5 @@ label {
 #button input:active {
   background-color: #803409;
 }
+
+

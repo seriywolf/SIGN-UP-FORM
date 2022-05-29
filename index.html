@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <title>Document</title>
 </head>
 
@@ -18,7 +18,7 @@
     <div id="right">
         <div id="top">
             <p>This is educational student project. You know you need something like this in your life to help you
-                realize your deepest dreams. <br> Sign up <em>now</em>  to get started.</p>
+                realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
         <div id="form">
@@ -29,15 +29,15 @@
                         <li><label for="first">FIRST NAME</label><input type="text" id="first" name="fname" required>
                         </li>
                         <li><label for="email">EMAIL</label><input type="email" id="email" name="email" required></li>
-                        <li><label for="password">PASSWORD</label><input type="password" id="password" name="password"
-                                required></li>
+                        <li><label for="password">PASSWORD</label><input class="error" type="password" minlength="8"
+                                id="password" name="password" required></li>
                     </ul>
                     <ul>
                         <li><label for="last">LAST NAME</label><input type="text" id="last" name="lname" required></li>
                         <li><label for="phone">PHONE NUMBER</label><input type="tel" id="phone" name="phone" required>
                         </li>
-                        <li><label for="password2">CONFIRM PASSWORD</label><input type="password" id="password2"
-                                name="password2" required></li>
+                        <li><label for="password2">CONFIRM PASSWORD</label><input class="error" type="password"
+                                minlength="8" id="password2" name="password2" required></li>
                     </ul>
                 </fieldset>
             </form>
@@ -50,5 +50,6 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>

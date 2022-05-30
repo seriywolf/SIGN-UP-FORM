@@ -22,31 +22,35 @@
             <p>You <em>know</em> you want to.</p>
         </div>
         <div id="form">
-            <form action="1.html" id="signupForm" method="post">
+            <form action="" id="signupForm" method="get">
                 <legend>Let's do this!</legend>
                 <fieldset>
                     <ul>
-                        <li><label for="first">FIRST NAME</label><input type="text" id="first" name="fname" required>
+                        <li><label for="first">FIRST NAME</label><input type="text" id="first" name="fname"
+                                minlength="3" required>
                         </li>
-                        <li><label for="email">EMAIL</label><input type="email" id="email" name="email" required></li>
+                        <li><label for="email">EMAIL</label><input type="email" id="email" name="email" minlength="3"
+                                required></li>
                         <li><label for="password">PASSWORD</label><input class="error" type="password" minlength="8"
-                                id="password" name="password" pattern="[0-9a-fA-F]" required> <span></span></li>
-                                
-                                
+                                id="password" name="password" placeholder="Abcdefg1"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required> <span></span></li>
                     </ul>
                     <ul>
-                        <li><label for="last">LAST NAME</label><input type="text" id="last" name="lname" required></li>
-                        <li><label for="phone">PHONE NUMBER</label><input type="tel" id="phone" name="phone" required>
+                        <li><label for="last">LAST NAME</label><input type="text" id="last" name="lname" minlength="3"
+                                required></li>
+                        <li><label for="phone">PHONE NUMBER</label><input type="tel" id="phone" name="phone"
+                                minlength="5" required>
                         </li>
-                        <li><label for="password2">CONFIRM PASSWORD</label><input class="error" type="password"
-                                minlength="8" id="password2" name="password2" pattern="[0-9a-fA-F]" required></li>
+                        <li><label for="password2">CONFIRM PASSWORD</label><input placeholder="Abcdefg1" class="error"
+                                type="password" minlength="8" id="password2" name="password2"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required></li>
                     </ul>
                 </fieldset>
             </form>
         </div>
         <div id="bottom">
             <div id="button">
-                <input type="submit" form="signupForm" id="create" value="Create account">
+                <input type="submit" id="create" value="Create account">
             </div>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>

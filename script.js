@@ -10,19 +10,20 @@ const pwd = document.getElementById("password");
 const pwd2 = document.getElementById("password2");
 
 pwd.onclick = function () {
-  if (pwd.style.borderColor = "red") {
-    pwd.value = "";
-    pwd.style.borderColor = "#e5e7eb";
-    pwd2.style.borderColor = "#e5e7eb";
+  if (pwd.style.borderColor === "red") {
+      console.log("!")
+    //pwd.value = "";
+    pwd.style.borderColor = "";
+    pwd2.style.borderColor = "";
     document.querySelector("span").textContent = "";
   };
 };
 
 pwd2.onclick = function () {
-    if (pwd2.style.borderColor = "red") {
-      pwd2.value = "";
-      pwd.style.borderColor = "#e5e7eb";
-      pwd2.style.borderColor = "#e5e7eb";
+    if (pwd2.style.borderColor === "red") {
+      //pwd2.value = "";
+      pwd.style.borderColor = "";
+      pwd2.style.borderColor = "";
       document.querySelector("span").textContent = "";
     };
   };
@@ -33,6 +34,8 @@ document.getElementById("create").onclick = function () {
     pwd2.style.borderColor = "red";
     document.querySelector("span").textContent = "*Passwords do not match";
     document.querySelector("span").classList.add("addspan");
+  }else{
+    document.getElementById("signupForm").submit();
   }
 };
 

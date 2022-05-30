@@ -88,7 +88,7 @@ label {
 
 #form input:focus {
   outline: none;
-  border: rgb(115, 196, 243) solid 1px;
+  border: #73c4f3 solid 1px;
   box-shadow: 2px 2px 3px 0px #000000;
 }
 
@@ -130,4 +130,8 @@ span{
   height:1rem;
   display: block;
   margin-top: 4px;
+}
+
+::placeholder {
+  color: rgb(202, 202, 202);  
 }

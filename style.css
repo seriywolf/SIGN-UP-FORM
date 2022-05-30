@@ -43,7 +43,7 @@ legend {
 
 #form {
   background-color: white;
-  flex: auto;
+  flex: 1;
   padding: 24px 24px 0 24px;
 }
 
@@ -121,4 +121,13 @@ label {
   background-color: #803409;
 }
 
+.addspan{  
+  color:red;
+  font-size: 0.8rem;    
+}
 
+span{    
+  height:1rem;
+  display: block;
+  margin-top: 4px;
+}

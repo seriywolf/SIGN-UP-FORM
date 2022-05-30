@@ -27,7 +27,7 @@ pwd2.onclick = function () {
     };
   };
 
-document.getElementById("button").onclick = function () {
+document.getElementById("create").onclick = function () {
   if (pwd.value !== pwd2.value) {
     pwd.style.borderColor = "red";
     pwd2.style.borderColor = "red";

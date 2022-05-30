@@ -1,3 +1,8 @@
+@font-face {
+  font-family: norsebold;
+  src: url("Norse-Bold.otf") format("opentype");
+}
+
 body {
   background: url("background.jpg");
   display: flex;
@@ -11,6 +16,30 @@ body {
 #left {
   width: 45%;
   border-right: 1px white solid;
+  display: flex;
+  flex-direction: column;
+}
+
+#header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, black,grey);
+  opacity: 0.8;  
+  top: 20%;
+  margin-top: 160px;
+}
+
+#header img{
+  height: 160px;
+  width: auto;
+  padding: 1rem;
+}
+
+#name{
+  font-size: 8rem;
+  font-family: norsebold;
+  color: white;
 }
 
 #right {
@@ -22,7 +51,7 @@ body {
 
 #top,
 #bottom {
-  background-color: rgba(228, 228, 228, 0.87);
+  background-color: #f5f4f4e6;
   height: 39%;
 }
 
